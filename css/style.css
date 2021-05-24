@@ -1,0 +1,41 @@
+@import '../fonts/fonts.css';
+@import '../css/hedaer.css';
+@import '../css/home1-home2.css';
+@import '../css/sec1.css';
+@import '../css/sec2.css';
+@import '../css/sec3.css';
+@import '../css/sec4.css';
+@import '../css/sec5.css';
+@import '../css/sec6.css';
+@import '../css/sec7.css';
+@import '../css/sec8.css';
+@import '../css/sec9.css';
+@import '../css/sec10.css';
+/* section 11 , 12 were not cool */
+@import '../css/sec13.css';
+@import '../css/footer.css';
+@import 'animate.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Itim';
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    background-color: #E1F3F4;
+}
+::-webkit-scrollbar {
+    width: 12px;
+
+}
+::-webkit-scrollbar-thumb {
+    background:#293778;
+    border-radius: 6px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4c5da8;
+}

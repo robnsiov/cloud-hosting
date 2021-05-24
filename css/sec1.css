@@ -1,0 +1,94 @@
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    padding: 0 2%;
+    background-color: #E1F3F4;
+}
+.services .service {
+    flex-basis: calc(25% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    background-color: #F1F5FF;
+    border-radius: 5px;
+    border: 2px solid #F1F5FF;
+    transition: border 0.3s, background-color 0.4s;
+}
+.service:hover {
+    border: 2px solid #00C8DB;
+    background-color: white;
+}
+.service:hover a {
+    background-color: #00C8DB;
+    color: white;
+}
+.service .service-logo {
+    width: 50px;
+    height: 50px;
+    background: url(../images/service1.png);
+    background-size: cover !important;
+}
+.service:nth-child(2) .service-logo {
+    background: url(../images/service2.png);
+} 
+.service:nth-child(3) .service-logo {
+    background: url(../images/service3.png);
+} 
+.service:nth-child(4) .service-logo {
+    background: url(../images/service4.png);
+} 
+.service h3 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #39395F;
+}
+.service p {
+    color: #9c9c9c;
+    text-align: center;
+    padding: 0 5px;
+}
+.service a {
+    position: relative;
+    display: inline-block;
+    padding: 12px 25px;
+    padding-right: 55px;
+    color: #a5a5a5;
+    background-color: white;
+    margin-top: 45px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.service a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/right-arrow.png);
+    background-size: cover;
+}
+@media (max-width:1100px) {
+    .service {
+        flex-basis: calc(33.33% - 20px) !important;
+    }
+}
+@media (max-width:750px) {
+    .service {
+        flex-basis: calc(50% - 20px) !important;
+    }
+}
+@media (max-width:540px) {
+    .service {
+        flex-basis: 100% !important;
+    }
+}

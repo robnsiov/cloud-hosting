@@ -1,0 +1,59 @@
+@import '../fonts/fonts.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'proximaNova';
+    text-decoration: none;
+}
+.donate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 3%;
+    min-height: 20vh;
+    border-radius: 10px;
+    background-color: #07102c;
+}
+.donate-desc, .donate-btn {
+    width: 50%;
+    padding: 25px;
+}
+.donate-desc h2 {
+    width: 400px;
+    margin-bottom: 20px;
+    color: #293778;
+}
+.donate-desc p {
+    color: #BDCAF4;
+}
+.donate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.donate-btn a {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 5px;
+    background: linear-gradient(#6CE5FC, #2D9AFE);
+    color: white;
+    font-size: 14px;
+}
+.donate-btn a:hover {
+    background:  #293778;
+}
+@media (max-width:750px) {
+    .donate {
+        flex-direction: column;
+    }
+    .donate-desc h2 {
+        width: unset !important;
+    }
+    .donate-desc ,
+    .donate-btn {
+        padding: 4%;
+        width: 100% !important;
+        text-align: center;
+    }
+}

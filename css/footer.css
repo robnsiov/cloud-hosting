@@ -1,0 +1,135 @@
+@import '../fonts/fonts.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'proximaNova';
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 50vh;
+}
+footer .footer-smoke {
+    width: 100%;
+    background-color: #293778;
+}
+.footer-smoke img {
+    width: 100%;
+}
+footer .footer-links {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #293778;
+}
+.footer-item {
+    margin: 10px;
+    flex-basis: calc(25% - 20px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.footer-item .footer-header {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+.footer-header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+}
+.footer-header h2 {
+    position: relative;
+    display: inline-block !important;
+    height: 100%;
+    padding-bottom: 10px;
+}
+.footer-header h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3157ff;
+}
+.f-item1 p {
+    color: white;
+    margin-top: 15px;
+}
+.footer-item ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.footer-item ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.footer-item ul li:first-child {
+    margin-top: 15px;
+}
+.footer-item ul li:last-child {
+    margin-bottom: 0;
+}
+.footer-item ul li a {
+    color: white;
+    font-size: 18px;
+}
+.footer-item ul li a i {
+    display: inline-block;
+    margin-right: 5px;
+}
+.creator {
+    width: 100%;
+    text-align: center;
+    background-color: #293778;
+    color: white;
+    padding: 15px 0;
+    font-size: 22px;
+    border-top: 2px solid grey;
+    font-weight: bold;
+}
+footer *:hover {
+    color: #4860c7 !important;
+}
+.creator p {
+    font-family: 'Itim' !important;
+}
+@media (max-width:1100px) {
+    .footer-item {
+        flex-basis: calc(33.33% - 20px) !important;
+    }
+}
+@media (max-width:860px) {
+    .footer-item {
+        flex-basis: calc(50% - 20px) !important;
+    }
+}
+@media (max-width:660px) {
+    .footer-item ul li a {
+        font-size: 16px !important;
+    }
+    .footer-item {
+        flex-basis: 100% !important;
+    }
+    .creator {
+        font-size: 16px !important;
+    }
+}

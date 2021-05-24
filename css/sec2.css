@@ -1,0 +1,141 @@
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    padding: 10px 3%;
+    background-color: #5A7BE6;
+}
+.select p {
+    color: #889FEB;
+    width: 50%;
+}
+.select .select-btns {
+    width: 450px;
+    padding: 5px 2.5px ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.select-btns a {
+    text-align: center;
+    width: calc(50% - 5px);
+    display: inline-block;
+    padding: 15px 0;
+    background: linear-gradient(#69E3FD, #2C9BFE);
+    color: white;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 2.5px;
+    transition: 0.3s;
+}
+.select-btns a:hover {
+    background: #889FEB;
+}
+.plans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 75vh;
+    padding: 10px 3%;
+    background-color: #5A7BE6;
+}
+.plans .plan {
+    width: 280px;
+    background-color: #6A88E8;
+    border: 1px solid #849CEC;
+    padding: 20px;
+    border-radius: 7px;
+    margin:20px 0;
+    transition: 0.3s;
+}
+.plan:hover {
+    background-color: white;
+}
+.plan:hover h2, .plan:hover .plan-mode{
+    color: #2A3879;
+}
+.plan:hover a {
+    background: linear-gradient(#68E1FC, #2D9DFE);
+}
+.plan * {
+    margin-bottom: 13px;
+    color: #889FEB;
+}
+.plan span {
+    display: block;
+}
+.plan .plan-img {
+    width: 50px;
+    height: 50px;
+    background: url(../images/logo1.png);
+    background-size: cover !important;
+}
+.plan:nth-child(2) .plan-img {
+    background: url(../images/logo2.png);
+}
+.plan:nth-child(3) .plan-img {
+    background: url(../images/logo3.png);
+}
+.plan-mode {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.plan h2 {
+    font-size: 42px;
+    color: white;
+    margin: 3px 0;
+    letter-spacing: 3px;
+}
+.plan .plan-mode {
+    margin-bottom: 0;
+}
+.plan .plan-line {
+    width: 100%;
+    height: 2px;
+    background-color: #889FEB;
+}
+.plan a {
+    margin-bottom: 0;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #8FA5ED;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+@media (max-width:991px) {
+    .select {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .select-btns {
+        width: 100% !important;
+        order: -1;
+    }
+    .select-btns a {
+        width: 100% !important;
+    }
+    .select p {
+        width: 100% !important;
+        margin-top: 20px !important;
+        padding: 0 10px !important;
+    }
+}
+@media (max-width:596px) {
+    .plan {
+        flex-grow: 1;
+    }
+    .plan h2 {
+        font-size: 26px !important;
+    }
+}

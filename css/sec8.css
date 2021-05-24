@@ -1,0 +1,119 @@
+.domain {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 3%;
+    background-color: #4F80FF;
+    text-align: center;
+    border-radius: 8px;
+    padding: 60px;
+}
+.domain p {
+    color: white;
+}
+.domain form {
+    position: relative;
+    width: 80%;
+    align-self: center;
+    background-color: yellow;
+    border-radius: 35px;
+    margin: 30px 0;
+}
+.domain form input[type=text]{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 15px 30px;
+    padding-right: 27%;
+    font-size: 18px;
+    color: grey;
+    letter-spacing: 1.5px;
+}
+.domain form input[type=text]::placeholder{
+    font-size: 16px;
+}
+.domain form input[type=submit]{
+    right: 7px;
+    border: none;
+    outline: none;
+    padding: 12px 55px;
+    border-radius: 20px;
+    background-color: #4F80FF;
+    color: white;
+    text-align: center;
+}
+.domain form select {
+    position: relative;
+    right: 170px !important;
+    outline: none;
+    border: none;
+    padding: 7px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    border-left: 2px solid gray;
+}
+
+.domain form select, 
+.domain form .submit-domain{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.domains {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.domains .dmn {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 5px 15px;
+}
+.dmn span {
+    font-size: 14px;
+    color: white;
+}
+.domains .dmn:nth-child(2),
+.domains .dmn:nth-child(4){
+    color: #41A1FB;
+}
+.domains .dmn:nth-child(3){
+    color: #F4A017;
+}
+
+.domains .dmn:nth-child(5){
+    color: #E9B3FD;
+}
+@media (max-width:991px){
+    .domain {
+        padding: 20px !important;
+    }
+    .form {
+        width: 100% !important;
+    }
+}
+@media (max-width:600px) {
+    .form,
+    .domain form input[type=text]{
+        border-radius: 10px !important;
+        letter-spacing: 0.5px;
+    }
+    .form input:nth-child(1) {
+        padding-left: 8px !important;
+        font-size: 16px !important;
+    }
+    .submit-domain{
+        padding: 12px 25px !important;
+        border-radius: 5px !important;
+    }
+    .domain form select {
+        right: 97px !important;
+        padding: 7px 0px !important;
+    }
+}

@@ -1,0 +1,195 @@
+.discount-carts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 50px 3%;
+}
+.discount-carts .discount-cart {
+    position: relative;
+    width: calc(33.33% - 8%);
+    margin: 50px 4%;
+    height: 400px;
+    background-color: #1673ff;
+    border-radius: 5px;
+    box-shadow: 50px 50px 50px rgba(255, 255, 255, 0.2);
+    padding: 2%;
+}
+.discount-cart .discount-logo {
+    position: absolute;
+    display: inline-block;
+    top: -17%;
+    right: -13%;
+    width: 125px;
+    height: 125px;
+    transform: rotate(18deg);
+    background: url(../images/sign.png);
+    background-size: cover;
+    padding: 10px;
+    color: #BDCAF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.discount-logo span {
+    display: block;
+    margin: 0px;
+}
+.discount-logo span:nth-child(1){
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.discount-logo span:nth-child(2){
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.start-shopping {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    line-height: 50px;
+    padding-left: 30px;
+    font-weight: bolder;
+    letter-spacing: 3.5px;
+    color: #293778;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.start-shopping:hover {
+    background-color: #293778;
+    color: #BDCAF4;
+}
+.start-shopping::before, 
+.start-shopping::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -65px;
+    width: 65px;
+    height: 100%;
+    background-color: #BDCAF4;
+    border-radius: 0 2px 2px 0;
+}
+@media (max-width:514px){
+    .start-shopping::before, 
+    .start-shopping::after {
+    display: none;
+    }
+    .start-shopping {
+        text-align: center;
+        border-radius: 5px;
+        background-color: #293778;
+        color: #BDCAF4;
+        padding: 0;
+    }
+}
+.start-shopping::after{
+    background: url(../images/arrow-logo.png) no-repeat;
+    background-size: contain;
+    transform: scale(0.4);
+}
+.edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 70px solid #E1F3F4;
+    border-right: 70px solid transparent;
+}
+.items-cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    color: #BDCAF4;
+}
+.top-logo-item {
+    width: 80px;
+    height: 80px;
+    background: url(../images/service1.png);
+    background-size: cover !important;
+}
+.discount-cart:nth-child(2) .top-logo-item {
+    background: url(../images/service2.png);
+}
+.discount-cart:nth-child(3) .top-logo-item {
+    background: url(../images/service3.png);
+}
+.discount-cart:nth-child(4) .top-logo-item {
+    background: url(../images/service4.png);
+}
+.items-cart p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #293778;
+}
+.cart-price span:nth-child(1){
+    font-size: 24px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-decoration: 2px solid #293778 line-through;
+}
+.cart-price span:nth-child(2){
+    font-size: 32px;
+    color: white;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.cart-detail {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #293778;
+}
+@media (max-width:1041px) {
+    .discount-cart {
+        width: calc(50% - 8%) !important;
+    }
+}
+@media (max-width:950px) {
+    .discount-cart {
+        width: 100% !important;
+    }
+    .discount-logo {
+        top: -60px !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: unset !important;
+        background-image: unset !important;
+        transform: rotate(0deg) !important;
+        background-color: #293778 !important;
+    }
+    .edge {
+        border-top: 70px solid #1673ff;
+        border-right: 70px solid transparent;
+    }
+    .discount-logo span:nth-child(2){
+        position: relative !important;
+        bottom: 7   px !important;
+    }
+    .discount-logo {
+        flex-direction: row !important;
+    }
+    .discount-logo span:nth-child(2){
+        margin: 15px 0 0 10px !important;
+    }
+
+}

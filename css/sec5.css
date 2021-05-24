@@ -1,0 +1,107 @@
+.analysis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 10px 3%;
+}
+.analysis .ana-logo {
+    position: relative;
+    width: 45%;
+}
+.ana-logo span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-size: cover !important;
+    border-radius: 50%;
+    border: 1px solid #3FD8F9;
+    box-shadow: 0 0 10px #3FD8F9;
+    animation: move-animate 1s ease-in-out infinite;
+}
+@keyframes move-animate {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.ana-logo span:nth-child(1){
+    top: 17%;
+    left: 10%;
+    background: url(../images/analytics.png);
+}
+.ana-logo span:nth-child(2){
+    top: 10%;
+    left: 80%;
+    background: url(../images/headphones.png);
+}
+.ana-logo span:nth-child(3){
+    top: 78.3%;
+    left: 47%;
+    background: url(../images/cyber-security.png);
+    background-color: white;
+}
+.ana-logo img {
+    width: 100%;
+}
+.analysis .ana-content {
+    width: 55%;
+    margin-left: 80px;
+}
+.ana-content h2 {
+    color: #293778;
+}
+.ana-content p {
+    color: #BDCAF4;
+    margin: 25px 0;
+    font-size: 18px;
+}
+.counts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ana-item .count {
+    font-size: 26px;
+    font-weight: bold;
+    color: #293778;
+    margin-bottom: 15px;
+}
+.ana-item span{
+    color: #BDCAF4;
+    display: block;
+}
+.ana-content a {
+    display: inline-block;
+    padding: 12px 35px;
+    color: #293778;
+    background-color: #C5F3FD;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+.ana-content a:hover {
+    background-color: #3FD8F9;
+}
+@media (max-width:991px) {
+    .analysis {
+        flex-direction: column !important;
+    }
+    .ana-content {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+@media (max-width:680px) {
+    .ana-logo {
+        width: 100% !important;
+    }
+}
